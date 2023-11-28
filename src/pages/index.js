@@ -9,7 +9,7 @@ import Profile from "./profile"
 
 function Index(){
     return(
-        <div className="flex w-full gap-5 dark:text-white">
+        <div className="flex w-full gap-5 dark:bg-slate-900 dark:text-white">
           <Routes>
                     <Route element={<Nav/>}>
                         <Route index element={<MyBlog/>}/>

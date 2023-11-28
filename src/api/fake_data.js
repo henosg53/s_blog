@@ -48,3 +48,79 @@ export const contacts=[
     }
 
 ]
+
+export const comments=[
+    {
+        post:1,
+        username: "enosh27",
+        comment: "Cool house",
+
+    },
+    {
+        post: 1,
+        username: "enoch7",
+        comment: "Cool house",
+
+    },
+    {
+        post: 1,
+        username: "eman2",
+        comment: "Cool house",
+
+    },
+    {
+        post: 1,
+        username: "egro33",
+        comment: "Cool house",
+
+    },
+    {
+        post:1,
+        username: "enosh27",
+        comment: "Cool house",
+
+    },
+    {
+        post: 1,
+        username: "enoch7",
+        comment: "Cool house",
+
+    },
+    {
+        post: 1,
+        username: "eman2",
+        comment: "Cool house",
+
+    },
+    {
+        post: 1,
+        username: "egro33",
+        comment: "Cool house",
+
+    },
+    {
+        post:1,
+        username: "enosh27",
+        comment: "Cool house",
+
+    },
+    {
+        post: 1,
+        username: "enoch7",
+        comment: "Cool house",
+
+    },
+    {
+        post: 1,
+        username: "eman2",
+        comment: "Cool house",
+
+    },
+    {
+        post: 1,
+        username: "egro33",
+        comment: "Cool house",
+
+    }
+
+]
