@@ -2,10 +2,18 @@ import { Button } from "@mui/material"
 import { Link, Outlet } from "react-router-dom"
 import NavBar from "./navigation_bar"
 import SearchBar from "./search_bar"
+import { useState } from "react"
 
 
-
+function More(){
+    return(
+        <div className="flex flex-col items-center justify-center bg-slate-800 w-[80%] h-20">
+            <Link to={'/'}><Button variant={'outlined'} size={'small'}>Log out</Button></Link>
+        </div>
+    )
+}
 function Nav(){
+    const [showMore,setShowMore] = useState(false)
 
     return(
         <div className="w-full">
@@ -18,7 +26,7 @@ function Nav(){
                 </div>
                 <div className="flex flex-col mt-[100px] w-full px-5 gap-10 items-center">
                     <SearchBar/>
-                    <Link className='w-full px-2' to='/home/blogs'>
+                    <Link className='w-full px-2' to='/home'>
                         <Button size={'small'}  className="w-[100%] hover:bg-gray-200 rounded-lg" >Home</Button>
                     </Link>
                     <Link className='w-full px-2' to='/home/messages'>
@@ -27,8 +35,11 @@ function Nav(){
                     <Link className='w-full px-2' to='/home/profile'>
                         <Button size={'small'}  className="w-full hover:bg-gray-200 rounded-lg" >Profile</Button>
                     </Link>
-                    <Link className='w-full px-2' to='/home/blogs'>
-                        <Button size={'small'}  className="w-full hover:bg-gray-200 rounded-lg" >More</Button>
+                    {showMore && <More/>}
+                    <Link className='w-full px-2' to='/home'>
+                        <Button
+                            onClick={()=>setShowMore(!showMore)}
+                            size={'small'}  className="w-full hover:bg-gray-200 rounded-lg" >More</Button>
                     </Link>
                     
                 </div>

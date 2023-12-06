@@ -49,7 +49,7 @@ const userNavigation = [
     { name: 'Sign out', href: '/login' },
 ]
 const navigation = [
-    { name: 'Blogs', href: '/home/blogs', current: true },
+    { name: 'Blogs', href: '/home', current: true },
     { name: 'Messages', href: '/home/messages', current: false },
     // { name: 'Staff', href: '/user/staff', current: false },
     // { name: 'Requests', href: '/user/requests', current: false },

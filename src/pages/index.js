@@ -13,7 +13,7 @@ function Index(){
           <Routes>
                     <Route element={<Nav/>}>
                         <Route index element={<MyBlog/>}/>
-                        <Route path='/blogs' element={<MyBlog/>}/>
+                        {/* <Route path='/blogs' element={<MyBlog/>}/> */}
                         <Route path='/messages' element={<Messages/>}/>
                         <Route path='/profile' element={<Profile/>}/>
 

@@ -124,3 +124,17 @@ export const comments=[
     }
 
 ]
+
+export const users = [
+    {
+        id:1,
+        username: "enosh21",
+        fullname: "enosh k",
+        email: "enosh@gmail.com",
+        password: "soul",
+        phone: "+251911223344",
+        city: "Addis Ababa",
+        profile_pic: pp,
+
+    }
+]

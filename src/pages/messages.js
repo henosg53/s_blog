@@ -5,13 +5,13 @@ import { contacts } from "../api/fake_data"
 export default function Messages(){
     return(
         <div className="flex w-full min-h-screen justifiy-between">
-            <div className="w-full bg-gray-200">
-                <h3>Conversations</h3>
+            <div className="w-full">
+                <h3 className="text-center text-black dark:text-white">Conversations</h3>
             </div>
-            <div className="flex flex-col gap-5 lg:w-[30%] md:w-[30%] sm:w-[30%] bg-gray-400 border border-l-black py-2 px-2">
+            <div className="flex flex-col gap-5 lg:w-[30%] md:w-[30%] sm:w-[30%] border border-l-black py-2 px-2">
                 <h2 className="text-center font-bold text-2xl">Contacts</h2>
                 {contacts.map((contact,i)=>(
-                    <div className="w-full flex gap-2 justify-start" key={i}>
+                    <div className="w-full flex gap-2 justify-start hover:scale-95" key={i}>
                         <span className="w-[20%] p-2 rounded-full border border-white">
                             <img src={contact.profile} alt="profile pic" />
                         </span>
